@@ -5,6 +5,7 @@
             <Navbar />
             <Search />
             <Cart />
+            <Button text='Get Started'/>
         </div>
     </header>
 </template>
@@ -16,6 +17,7 @@ import Logo from './logo_component.vue'
 import Navbar from './navbar_component.vue'
 import Search from './search_component.vue'
 import Cart from './cart_component.vue'
+import Button from './button_component.vue'
 
 export default {
     name:'header_component',
@@ -24,7 +26,8 @@ export default {
         Logo,
         Navbar,
         Search,
-        Cart
+        Cart,
+        Button
     }
 }
 </script>
