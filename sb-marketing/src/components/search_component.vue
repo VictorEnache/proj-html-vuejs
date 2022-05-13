@@ -16,6 +16,7 @@ export default {
 
 <style lang="scss">
     #search{
-        font-size: 12px;        
+        font-size: 12px;   
+        width: fit-content;     
     }
 </style>

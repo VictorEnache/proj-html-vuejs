@@ -4,6 +4,7 @@
             <Logo />
             <Navbar />
             <Search />
+            <Cart />
         </div>
     </header>
 </template>
@@ -14,6 +15,7 @@
 import Logo from './logo_component.vue'
 import Navbar from './navbar_component.vue'
 import Search from './search_component.vue'
+import Cart from './cart_component.vue'
 
 export default {
     name:'header_component',
@@ -21,7 +23,8 @@ export default {
     components:{
         Logo,
         Navbar,
-        Search
+        Search,
+        Cart
     }
 }
 </script>
