@@ -1,11 +1,15 @@
 <template>
-    <header id="#header">
+    <header id="header">
         <div class="container">
-            <Logo />
-            <Navbar />
-            <Search />
-            <Cart />
-            <Button text='Get Started'/>
+            <div class="row">
+                <Logo />
+                <div class="nav_left d_flex">
+                    <Navbar />
+                    <Search />
+                    <Cart />
+                    <Button text='Get Started'/>
+                </div>
+            </div>
         </div>
     </header>
 </template>
@@ -35,6 +39,25 @@ export default {
 
 
 <style lang="scss">
+#header{
+    padding: 10px 0;
+    .container{
+        .row{
+            justify-content: space-between;
+            align-items: center;
+            .nav_left{
+                align-items: center;
 
+                #search{
+                    margin: 0 20px;
+                }
+
+                #cart{
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+}
 </style>
 <!-- /style---------------------------------------------------------------- -->

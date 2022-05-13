@@ -27,7 +27,7 @@ export default {
     #navbar{
         ul{
             li{
-                margin: 0 10px;
+                margin-right: 20px;
 
                 a{
                     color: $text-color-theta;

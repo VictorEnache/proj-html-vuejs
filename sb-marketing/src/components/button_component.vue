@@ -20,10 +20,10 @@ export default {
 <style lang="scss">
     #button{
         width: fit-content;
-        background-color: $bg-color-gamma;
-        border-radius: 3px;
 
         a{
+            background-color: $bg-color-gamma;
+            border-radius: 3px;
             display: block;
             color: $text-color-alpha;
             text-decoration: none;
