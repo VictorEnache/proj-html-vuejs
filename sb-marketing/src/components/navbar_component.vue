@@ -32,6 +32,8 @@ export default {
                 a{
                     color: $text-color-theta;
                     padding: 10px 0;
+                    font-size: 12px;
+                    font-weight: 600;
 
                     &:hover{
                         border-bottom: 2px solid $border-color-gamma;
