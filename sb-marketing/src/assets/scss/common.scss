@@ -1,0 +1,11 @@
+/* regola di reset che ha il compito di togliere alcune parti di stile fastidiose aggiunte di default dai browser */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Serve ad eliminare il padding che viene creto dai tag inlineblock racchiusi al interno dei tag block */
+img{
+    display: block;
+}
