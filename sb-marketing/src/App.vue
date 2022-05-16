@@ -1,20 +1,20 @@
 <template>
   <div id="app">
     <Header_c />
-    <Hero_image />
+    <Main_c />
   </div>
 </template>
 
 <script>
 
 import Header_c from './components/header_component.vue'
-import Hero_image from './components/jumbotron_component.vue'
+import Main_c from './components/main_component.vue'
 
 export default {
   name: 'App',
   components: {
     Header_c,
-    Hero_image
+    Main_c
   }
 }
 </script>
