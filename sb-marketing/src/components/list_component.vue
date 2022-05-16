@@ -55,11 +55,6 @@ export default {
 
         .list_text{
             
-            p{
-                font-size: 12px;
-                color: $text-color-eta;
-                margin-top: 0.5rem;
-            }
             ul{
                 padding-top: 22px;
                 li{
