@@ -2,6 +2,7 @@
   <div id="app">
     <Header_c />
     <Main_c />
+    <Footer_c />
   </div>
 </template>
 
@@ -9,12 +10,14 @@
 
 import Header_c from './components/header_component.vue'
 import Main_c from './components/main_component.vue'
+import Footer_c from './components/footer_component.vue'
 
 export default {
   name: 'App',
   components: {
     Header_c,
-    Main_c
+    Main_c,
+    Footer_c
   }
 }
 </script>
