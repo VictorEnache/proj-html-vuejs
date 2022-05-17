@@ -6,6 +6,7 @@
         <Features/>
         <Testimonials />
         <Latest_posts />
+        <Contact />
     </main>
     <!-- /#site_main -->
 </template>
@@ -19,6 +20,7 @@ import Tips from './tips_section_component.vue'
 import Features from './features_section_component.vue'
 import Testimonials from './testimonials_section_component.vue'
 import Latest_posts from './latest_posts_component.vue'
+import Contact from './contact_section_component.vue'
 
 export default {
     name:'main_component',
@@ -29,7 +31,8 @@ export default {
         Tips,
         Features,
         Testimonials,
-        Latest_posts
+        Latest_posts,
+        Contact
     }
 }
 </script>
