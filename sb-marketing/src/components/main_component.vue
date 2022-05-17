@@ -3,6 +3,8 @@
         <Hero_image />
         <Lists/>
         <Tips/>
+        <Features/>
+        <Testimonials />
     </main>
     <!-- /#site_main -->
 </template>
@@ -13,6 +15,8 @@
 import Hero_image from './jumbotron_component.vue'
 import Lists from './lists_section_component.vue'
 import Tips from './tips_section_component.vue'
+import Features from './features_section_component.vue'
+import Testimonials from './testimonials_section_component.vue'
 
 export default {
     name:'main_component',
@@ -20,7 +24,9 @@ export default {
     components:{
         Hero_image,
         Lists,
-        Tips
+        Tips,
+        Features,
+        Testimonials
     }
 }
 </script>

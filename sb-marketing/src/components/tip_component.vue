@@ -1,5 +1,5 @@
 <template>
-    <div id="tip">
+    <div id="tip" class="row">
         <div class="tip_image">
             <div class="image">
                 <img :src="img_src" alt="">
@@ -24,3 +24,12 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+    #tip{
+        padding: 25px 0;
+        .tip_image{
+            padding-right: 10px;
+        }
+    }
+</style>

@@ -3,9 +3,12 @@
         <div class="container">
             <div class="row">
                 <div class="tips_text col">
-                    <h2>Get tips trick on how to skyrocket your sales</h2>
-                    <p>Faff only about a quid blower i don't want no agro bleeding chimney pot burke tosser cras nice one boot fanny.!</p>
-                    <Tip heading_text="Reporting analysis" :img_src="require('../assets/img/510.png')"/>
+                    <div class="upper_text">
+
+                        <h2>Get tips trick on how to skyrocket your sales</h2>
+                        <p>Faff only about a quid blower i don't want no agro bleeding chimney pot burke tosser cras nice one boot fanny.!</p>
+                    </div>
+                    <Tip heading_text="Reporting analysis" :img_src="require('../assets/img/510.png')" class="active"/>
                     <Tip heading_text="Thecnical SEO Audit" :img_src="require('../assets/img/511.png')"/>
                 </div>
                 <!-- /.tips_text -->
@@ -39,6 +42,7 @@ export default {
     margin-top: 110px;
     .container{
         .row{
+            column-gap: 1rem;
             .col{
                 width: 50%;
             }
@@ -49,7 +53,19 @@ export default {
                 background-position: bottom;
                 background-repeat: no-repeat;
             }
+
+            .tips_text{
+                .active{
+                    border: 1px solid $border-color-beta;
+                    box-shadow: 10px 20px 25px $border-color-beta;
+                }
+                .upper_text{
+                    padding-bottom: 30px;
+                }
+            }
         }
     }
 }
+
+
 </style>
