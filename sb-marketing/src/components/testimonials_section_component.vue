@@ -9,6 +9,11 @@
             <div class="testimonial_cards row">
                 <Testimonial_card :img_src="persona.image" :nome="persona.nome" :ruolo="persona.ruolo" :key='index' v-for="(persona, index) in people"/>
             </div>
+
+            <div class="pallini">
+                <fa-icon :icon="['fas','circle']"/>
+                <fa-icon :icon="['fas','circle']"/>
+            </div>
             <!-- /.testimonial_cards -->
         </div>
     </section>
@@ -50,6 +55,7 @@ export default {
 
 <style lang="scss">
     #testimonials{
+        margin-top: 90px;
         .container{
             .testimonials_text{
                 margin: auto;
@@ -61,6 +67,11 @@ export default {
                 padding-top: 75px;
                 padding-bottom: 2.5rem;
                 justify-content: space-between;
+            }
+
+            .pallini{
+                width: fit-content;
+                margin: auto;
             }
         }
     }
