@@ -6,8 +6,8 @@
                 <p>If you are planning on developing a product landing app or website, take a look at this beautiful-crafted</p>
             </div>
             <!-- /.testimonials_text -->
-            <div class="testimonial_cards">
-
+            <div class="testimonial_cards row">
+                <Testimonial_card :img_src="persona.image" :nome="persona.nome" :ruolo="persona.ruolo" :key='index' v-for="(persona, index) in people"/>
             </div>
             <!-- /.testimonial_cards -->
         </div>
@@ -18,8 +18,31 @@
 
 
 <script>
+import Testimonial_card from './testimonial_card_component.vue'
+
 export default {
-    name:'testimonials_section_component'
+    name:'testimonials_section_component',
+
+    data(){
+        return{
+            people:[
+                {
+                    nome:'Julia Aann',
+                    ruolo:'COO softbox',
+                    image:require("../assets/img/26.jpeg")
+                },
+                                {
+                    nome:'Julia Aann',
+                    ruolo:'COO softbox',
+                    image:require("../assets/img/27.jpeg")
+                }
+            ]
+        }
+    },
+
+    components:{
+        Testimonial_card
+    }
 }
 </script>
 
@@ -32,6 +55,12 @@ export default {
                 margin: auto;
                 text-align: center;
                 width: 50%;
+            }
+
+            .testimonial_cards{
+                padding-top: 75px;
+                padding-bottom: 2.5rem;
+                justify-content: space-between;
             }
         }
     }
