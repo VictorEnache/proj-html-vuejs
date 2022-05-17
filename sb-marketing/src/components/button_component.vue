@@ -29,6 +29,9 @@ export default {
             text-decoration: none;
             font-size: 11px;
             padding: 11px 14px;
+            &:hover{
+                background-color: $text-color-theta;
+            }
             
         
         }
